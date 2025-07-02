@@ -1,0 +1,59 @@
+footer {
+  background-color: #0e0e0e;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Decorative vertical lines */
+.lines {
+  margin-bottom: 20px;
+}
+
+.lines span {
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: #666;
+  margin: 0 5px;
+}
+
+/* Footer links */
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #888;
+  margin: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-nav a:hover {
+  background-color: #d4a253;
+  color: #000;
+}
+
+/* Copyright */
+footer p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+footer span {
+  color: #d4a253;
+  font-weight: bold;
+}
+
+.footer-nav a:visited {
+  color: white;  /* Prevent color change after click */
+}
+.footer-nav a:visited:hover {
+  background-color: #d4a253; /* Maintain hover effect */
+  color: #000; /* Maintain text color on hover */
+}

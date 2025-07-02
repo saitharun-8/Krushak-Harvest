@@ -1,0 +1,470 @@
+.product-section {
+  margin-left: 100px;
+  margin-right: 100px;
+  
+}
+
+.our-products {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+
+
+
+.product-container {
+  margin-bottom: 30px;
+  background-color: black;
+  margin-right: 20px;
+  width: 300px;
+  height: 360px;
+  border: 0.1px solid rgb(128, 119, 119);
+  color: white; /* Default text color */
+  cursor: pointer;
+}
+
+.product-container:hover {
+  background-color: white;
+  color: black;
+}
+
+.product-container:hover .img-container {
+  background-color: white;
+}
+
+.product-container:hover .img-container p,
+.product-container:hover .price-tag {
+  color: black;
+}
+
+.product-container:hover .button-tag button {
+  background-color: black;
+  color: white;
+}
+
+
+.img-container {
+  background-color: black;
+  width: 100%; /* make it full width of parent */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;     /* ✅ Centers image & name horizontally */
+  justify-content: center; /* Optional: vertically centers whole content */
+  flex-direction: column;
+  margin: 0;
+  padding: 4px 0 0 0; /* optional: tiny space at top */
+  text-align: center;
+}
+
+.photo {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+p{
+  padding-left: 8px;
+}
+
+.price-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 0; */
+}
+
+.price{
+  /* margin-bottom: 5px; */
+}
+
+.price-tag {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  
+}
+
+/* .button-tag:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+} */
+
+.button-tag button {
+    width: 140px;     /* ✅ Same width for both buttons */
+  height: 35px;     /* ✅ Same height for both buttons */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.buy-now {
+  width: 160px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.buy-now:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.cart {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7px;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+
+.sellar-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+
+
+.sellar-info > * {
+  width: 80%;
+  height: 40px;
+  font-size: medium;
+  margin-bottom: 8px;
+  margin-left: 30px;
+} 
+
+.sellar-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sellar-name {
+  width: 90%;
+  height: 60px;
+  border-radius: 5px;
+  padding-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  font-size: large;
+  background-color: black;
+  color: white
+}
+
+.sellar-email {
+  width: 90%;
+  height: 60px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  background-color: black;
+  color: white;
+}
+
+.sellar-number {
+  width: 90%;
+  height: 60px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  background-color: black;
+  color: white;
+}
+
+.sellar-submit {
+  width: 90%;
+  height: 60px;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: large;
+  background-color: black;
+  color: white;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #0e0e0e;
+  padding: 40px;
+}
+
+.contact-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.map {
+  flex: 1 1 48%;
+  margin-bottom: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+.contact-form {
+  flex: 1 1 48%;
+  background-color: #1a1a1a;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form button {
+  width: 90%;
+  padding: 12px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  background-color: #111;
+  color: white;
+  border: 1px solid #444;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  width: 90%;
+  background-color: #d4a253;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e0b46c;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width:768px) {
+  .product-section {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+
+  .box-container {
+    margin-top: 10px;
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-products {
+    font-size: 1.5rem; /* Adjusted font size for mobile */
+    margin-top: 5px;
+    margin-left: 20px; /* Center the title */
+  }
+  
+  h1 {
+    font-size: 40px; /* Adjusted font size for mobile */
+    padding-left: 0px; /* Reduced padding for mobile */
+    padding-right: 5px;
+    margin-top: 5px; /* Reduced margin for mobile */
+    margin-bottom: 10px; /* Reduced margin for mobile */
+  }
+  .sellar-info > * {
+    width: 80%;
+    margin-left: 20px;
+
+  }
+
+  .sellar-name,
+  .sellar-email,
+  .sellar-number,
+  .sellar-submit {
+    width: calc(100% - 10px); /* Adjust width for mobile */
+    /* margin-left: 10px;  */
+    font-size: 13px;
+    height: 40px;
+  }
+}
+
+/* Mobile view of box-container starts here */
+
+@media (max-width:768px) {
+  .box-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+
+
+.product-container {
+  margin-bottom: 30px;
+  margin-right: 20px;
+  background-color: black;
+  margin-right: 20px;
+  width: 90%;
+  height: 300px;
+  border: 0.1px solid rgb(128, 119, 119);
+  color: white; /* Default text color */
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.product-container:hover {
+  background-color: white;
+  color: black;
+}
+
+.product-container:hover .img-container {
+  background-color: white;
+}
+
+.product-container:hover .img-container p,
+.product-container:hover .price-tag {
+  color: black;
+}
+
+.product-container:hover .button-tag button {
+  background-color: black;
+  color: white;
+}
+
+
+.img-container {
+  background-color: black;
+  width: 90%; /* make it full width of parent */
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;     /* ✅ Centers image & name horizontally */
+  justify-content: center; /* Optional: vertically centers whole content */
+  flex-direction: column;
+  margin-left: auto;
+  padding-left: 14px; /* optional: tiny space at top */
+  padding-right: 0%;
+  text-align: center;
+}
+
+.photo {
+  max-width: 80%;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+p{
+  padding-left: 8px;
+}
+
+.price-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: auto; */
+  padding-left: 10px;
+}
+
+.price{
+  /* margin-bottom: 5px; */
+}
+
+.price-tag {
+  margin: 0;
+  padding-left: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  
+}
+
+.button-tag:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.button-tag button {
+  width: 60px;     /* ✅ Same width for both buttons */
+  height: 35px;     /* ✅ Same height for both buttons */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.7rem;
+
+}
+
+.buy-now {
+  width: 90px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 10px;
+  padding-left: 25px;
+}
+
+.buy-now:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.cart {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7px;
+  padding-left: 25px;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+}
